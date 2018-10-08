@@ -9,7 +9,7 @@
 				<text class="z9 cz jieao_er fz24">{{rtext}}</text>
 			
 
-				<icon class="dx_ic icon-i-right"></icon>
+				<icon class="dx_ic icon-i-right sdf_jh_Dert"></icon>
 			</view>
 			
 		</view>
@@ -53,5 +53,9 @@
 	}
 	.jieao_er.ab{
 		top: 15upx;
+	}
+	.sdf_jh_Dert{
+		position: relative;
+		top: 12upx;
 	}
 </style>
