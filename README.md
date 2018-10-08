@@ -1,14 +1,24 @@
+# 运行生成文档的工具
+```cmd
+cnpm i docsify-cli -g
+docsify serve
+http://localhost:3000
+```
+
+
+
+npm i docsify-cli -g
 # 列表
 
 > 使用指南
 
 ```main.vue
-import dxlist from './dxgj_uni/dx-list.vue'
-Vue.component('dx-list',dxlist)
+import dxlist from './dxgj_uni/dx_list.vue'
+Vue.component('dx_list',dxlist)
 ```
 
 ```xx.vue
-<dx-list :title="'独行工匠'" :rtext="'介绍'" isjt="true"></dx-list>
+<dx_list :title="'独行工匠'" :rtext="'介绍'" isjt="true"></dx_list>
 ```
 >参数说明
     
@@ -38,10 +48,31 @@ Vue.component('dx_col',dx_col)
         </dx_row>
 ```
 
-
 >参数说明
     
 参数|说明|默认值
 -|-|-
 gutter | 间距 | dx_col也可以加
-num | - | 列元素宽度
+num | 列元素宽度 |  -
+
+
+
+# 单行输入框
+
+> 使用指南
+
+```main.vue
+import dx_input from './components/dx_input.vue'
+Vue.component('dx_input',dx_input)
+```
+
+```xx.vue
+	<dx_input v-model="form.password" type="3" placeholder="密码" rightText="忘记密码" @rTextCabat="rTextCabat"></dx_input>
+```
+>参数说明
+    
+参数|说明|默认值
+-|-|-
+type | 类型 | 1文本  2数字  3密码 4搜索
+rightText | 右边的文字 | -
+rTextCabat | 点击右边区域 | -
