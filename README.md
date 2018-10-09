@@ -76,3 +76,58 @@ Vue.component('dx_input',dx_input)
 type | 类型 | 1文本  2数字  3密码 4搜索
 rightText | 右边的文字 | -
 rTextCabat | 点击右边区域 | -
+
+
+# tab   切换
+
+> 使用指南
+
+```main.vue
+import dx_tab from './components/dx_tab.vue'
+Vue.component('dx_tab',dx_tab)
+```
+
+```xx.vue
+			<dx_tab :title_d="title_d"></dx_tab>
+            
+            data(){
+                return{
+                    	title_d: [{
+					name: "我发起的申诉",
+					cls: "act",
+					page: 1,
+					date_df: [{
+						id: 0
+					}, {
+						id: 1
+					}]
+				}, {
+					name: "我收到的申诉",
+					cls: "",
+					page: 1,
+					date_df: [{
+						id: 3
+					}, {
+						id: 4
+					}]
+				}]
+                }
+            }
+```
+>参数说明
+    
+参数|说明|默认值
+-|-|-
+title_d | 数据 | -
+
+
+
+
+
+
+
+
+
+
+
+
